@@ -1,9 +1,11 @@
 package yoy.vibrateplayaudiosounds;
 
+import android.os.Vibrator;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class SelectAudioActivity extends ActionBarActivity {
@@ -32,5 +34,11 @@ public class SelectAudioActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void btn_onClick(View v){
+        Vibrator vibrator = (Vibrator)getSystemService(VIBRATOR_SERVICE);
+        long[] ints = new long[] { 0, 100, 50, 100, 50, 200, 50, 300 };
+        vibrator.vibrate(ints, -1);
     }
 }
