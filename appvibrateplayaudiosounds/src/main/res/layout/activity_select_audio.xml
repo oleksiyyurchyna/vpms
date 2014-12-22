@@ -1,23 +1,33 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_music"
     tools:context="yoy.vibrateplayaudiosounds.SelectAudioActivity">
 
     <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/startBtnId"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:text="vibrate"
+            android:text="Lets ROCK!"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            style="@style/AppTheme.MyButton"
             android:onClick="btn_onClick"/>
 
     <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="stop"
+            android:layout_alignTop="@+id/startBtnId"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="Stop this"
+            style="@style/AppTheme.MyButton"
             android:onClick="btnStop_onClick"/>
 
-</LinearLayout>
+</RelativeLayout>

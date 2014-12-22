@@ -5,4 +5,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme.MyButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/my_button_drawable</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">12pt</item>
+    </style>
+
 </resources>
